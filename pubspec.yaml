@@ -1,0 +1,78 @@
+name: loadserv_task
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  flutter_bloc: ^8.1.4
+  dio: ^5.4.1
+  pretty_dio_logger: ^1.3.1
+  lottie: ^3.1.0
+  flutter_screenutil: ^5.9.0
+  file_picker: ^8.0.0+1
+  get_it: ^7.6.8
+  font_awesome_flutter: ^10.7.0
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  build_runner: ^2.4.8
+  json_annotation: ^4.8.1
+  json_serializable: ^6.7.1
+  retrofit: ^4.1.0
+  retrofit_generator: ^8.1.0
+  freezed: ^2.4.7
+  freezed_annotation: ^2.4.1
+  animated_snack_bar: ^0.4.0
+  equatable: ^2.0.5
+  shared_preferences: ^2.2.2
+  hive_flutter: ^1.1.0
+  hive_generator: ^2.0.1
+  path_provider: ^2.1.5
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/lottie/
+    - assets/fonts/
+
+  fonts:
+  - family: Arial
+    fonts:
+      - asset: assets/fonts/arial_bold.ttf
+        weight: 700
+      - asset: assets/fonts/arial_light.ttf
+        weight: 400
+       
+  - family: Commissioner
+    fonts:
+      - asset: assets/fonts/commissioner_semibold.ttf
+        weight: 600
+      - asset: assets/fonts/commissioner_regular.ttf
+        weight: 400
+  - family: irishGrover
+    fonts:
+      - asset: assets/fonts/irishGrover_regular.ttf
+        weight: 400
+  - family: inter
+    fonts:
+      - asset: assets/fonts/inter_bold.otf
+        weight: 700
+      - asset: assets/fonts/inter_regular.otf
+        weight: 400
+      - asset: assets/fonts/inter_medium.otf
+        weight: 500
+              
+        
+ 
+     
