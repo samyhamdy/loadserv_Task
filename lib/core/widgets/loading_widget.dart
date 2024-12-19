@@ -1,6 +1,5 @@
 import 'package:loadserv_task/core/app_assets/app_assets.dart';
 import 'package:loadserv_task/core/app_colors/app_colors.dart';
-import 'package:loadserv_task/core/main_services/screen_sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lottie/lottie.dart';

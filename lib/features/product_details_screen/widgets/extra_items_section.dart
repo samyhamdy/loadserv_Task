@@ -5,7 +5,6 @@ import '../../../core/app_styles/text_styles.dart';
 import '../../../core/widgets/spacing.dart';
 import '../cubit/product_details_cubit.dart';
 import 'extra_addition_item.dart';
-import 'salad_item.dart';
 
 class MealExtraItemsSection extends StatefulWidget {
   const MealExtraItemsSection({super.key});

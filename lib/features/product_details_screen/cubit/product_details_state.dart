@@ -1,7 +1,4 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-
-import '../models/meal_info_model.dart';
-
 part 'product_details_state.freezed.dart';
 
 @freezed

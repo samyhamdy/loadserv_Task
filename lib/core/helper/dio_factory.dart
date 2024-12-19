@@ -36,7 +36,6 @@ class DioFactory {
 
     dio?.interceptors.add(InterceptorsWrapper(
       onError: (DioException e, handler) {
-        // Handle errors globally if needed
         print("Error occurred: ${e.response?.statusCode}");
 
         handler.next(e);

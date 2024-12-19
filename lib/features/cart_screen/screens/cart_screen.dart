@@ -1,15 +1,11 @@
-import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:loadserv_task/core/app_colors/app_colors.dart';
-import 'package:loadserv_task/core/app_styles/text_styles.dart';
 import 'package:loadserv_task/core/widgets/spacing.dart';
 import 'package:loadserv_task/features/product_details_screen/cubit/product_details_cubit.dart';
 import '../../../core/widgets/empty_widget.dart';
 import '../../../main.dart';
 import '../../product_details_screen/cubit/product_details_state.dart';
-import '../../product_details_screen/models/meal_info_model.dart';
 import '../widgets/cart_appbar.dart';
 import '../widgets/cart_single_meal.dart';
 import '../widgets/checkout_btn.dart';
