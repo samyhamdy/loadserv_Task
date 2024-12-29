@@ -1,4 +1,4 @@
-package com.example.loadserv_task
+package com.cicd
 
 import io.flutter.embedding.android.FlutterActivity
 
