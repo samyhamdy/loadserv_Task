@@ -38,6 +38,16 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+
+
+
+
+flutter_assets:
+  assets_path: assets/
+  output_path: lib/core/app_assets 
+  filename: app_new_assets.dart
+  field_prefix:
+
 flutter:
   uses-material-design: true
 
@@ -45,7 +55,7 @@ flutter:
     - assets/icons/
     - assets/lottie/
     - assets/fonts/
-
+    
   fonts:
   - family: Arial
     fonts:

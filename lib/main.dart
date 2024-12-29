@@ -10,8 +10,9 @@ import 'features/product_details_screen/models/meal_list_model.dart';
 
 late Box<MealListModel> box;
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await setup();
   await Hive.initFlutter();
   Hive.registerAdapter(MealInfoModelAdapter());
   Hive.registerAdapter(WeightAdapter());
@@ -19,6 +20,5 @@ void main() async {
   Hive.registerAdapter(SaladAdapter());
   Hive.registerAdapter(MealListModelAdapter());
   box = await Hive.openBox<MealListModel>('cartBox');
-  await setup();
   runApp(App(appRouter: AppRouter()));
 }

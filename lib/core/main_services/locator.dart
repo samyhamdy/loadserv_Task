@@ -13,18 +13,25 @@ import '../helper/dio_factory.dart';
 GetIt sl = GetIt.I;
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
-setup() async {
-  sl.allowReassignment = true;
-  sl.registerSingleton<SharedPreferences>(
-      await SharedPreferences.getInstance());
-  sl.registerSingleton<CacheHelper>(await CacheHelper.getInstance());
-  Dio dio = await DioFactory.getDio();
-  sl.registerLazySingleton<ApiService>(() => ApiService(dio));
-  sl.registerLazySingleton<CategoryDetailsRepo>(
-      () => CategoryDetailsRepo(sl()));
-  sl.registerLazySingleton<ProductDetailsRepo>(() => ProductDetailsRepo(sl()));
-  sl.registerFactory<CategoryDetailsCubit>(() => CategoryDetailsCubit(sl()));
-  sl.registerFactory<ProductDetailsCubit>(() => ProductDetailsCubit(sl()));
+Future<void> setup() async {
+  try {
+    sl.allowReassignment = true;
+    sl.registerSingleton<SharedPreferences>(
+        await SharedPreferences.getInstance());
+    sl.registerSingleton<CacheHelper>(await CacheHelper.getInstance());
+    Dio dio = await DioFactory.getDio();
+    sl.registerLazySingleton<ApiService>(() => ApiService(dio));
+    sl.registerLazySingleton<CategoryDetailsRepo>(
+        () => CategoryDetailsRepo(sl()));
+    sl.registerLazySingleton<ProductDetailsRepo>(
+        () => ProductDetailsRepo(sl()));
+    sl.registerFactory<CategoryDetailsCubit>(() => CategoryDetailsCubit(sl()));
+    sl.registerFactory<ProductDetailsCubit>(() => ProductDetailsCubit(sl()));
+
+    print('Setup completed successfully.');
+  } catch (e) {
+    print('Error during setup: $e');
+  }
 }
 
 class NavigationService {
