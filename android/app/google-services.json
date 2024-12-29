@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "205487406272",
+    "project_id": "loadserv-task",
+    "storage_bucket": "loadserv-task.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205487406272:android:64f7495c466623339f4125",
+        "android_client_info": {
+          "package_name": "com.cicd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChhOx78PGxyPwjX4PNH_fOpxD6CsSBlhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
